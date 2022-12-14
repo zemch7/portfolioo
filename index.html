@@ -4,11 +4,20 @@
     <meta charset="UTF-8" /> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
     <title>Document</title> 
     <style> 
       * { 
         color: rgb(34, 32, 32); 
+        font-family: cursive;
       } 
+      .list{
+        font-weight: 600;
+
+      }
+      .list:hover{
+        color: orange;
+      }
       .menu { 
         max-width: 1640px; 
         display: flex; 
@@ -32,9 +41,18 @@
         margin-left: 222px; 
         margin-top: 6%; 
       } 
+      .main_bogy {
+        display: flex;
+
+      }
+      .third_main .first_cards img:hover{
+        width: 410px;
+        height: 410px;
+        transition: 1s
+      }
       .main_second img { 
-        margin-left: 25%; 
-        width: 45%; 
+        margin-left: 5%; 
+        width: 80%; 
         border-radius: 15px; 
       } 
       .about_main_p { 
@@ -62,18 +80,41 @@
       .third_main { 
         display: flex; 
         justify-content: space-between; 
+        height: 100%;
+        width: 95%;
+        margin: 100px auto;
       } 
       .third_main img { 
         width: 75%; 
         border-radius: 15px; 
-        margin-left: 14%; 
+        margin-left: 10%; 
+        height: 75%;
+       justify-content: space-between;
+
+
       } 
+      .forAnimation{
+        position: relative;
+        animation-name: example;
+        animation: example 2s infinite;
+        animation-duration: 3s;   
+      }
+      @keyframes example {
+        0%   { top:0px;}
+        50%  {top:200px;}
+        75%  {top:0px;}
+        1000%  {top:200px;}
+}
       .third_main h3 { 
         text-align: center; 
       } 
       .third_main p { 
         text-align: center; 
       } 
+      .third_main .first_cards img{
+        width: 400px;
+        height: 400px;
+      }
     </style> 
   </head> 
   <body> 
@@ -94,14 +135,16 @@
       </div> 
     </div> 
     <div class="main_second"> 
-      <div> 
-        <img src="./image/photo_5208622770072699233_y.jpg" alt="photo" /> 
+      <div class="main_bogy"> 
+        <div><img src="./image/photo_5208622770072699233_y.jpg" alt="photo" /> </div>
+        <div><img src="image/IMG_9874.PNG" alt="photo" /> </div>
       </div> 
       <div class="about_me"> 
-        <h1>Azem Zhakypova</h1> 
+        <div class="forAnimation">
+          <h1>Azem Zhakypova</h1> 
         <h3>Student, Designer, animator, programmer in future <br /></h3> 
         <p class="about_main_p"> 
-            I chose this profession because at the moment it is relevant and I myself was interested in it. I really like what I'm doing now. outside of college I have my own hobbies, i read books, play board games and sing
+            I chose this profession because at the moment it is relevant and I myself was interested in it. I really like what I'm doing now. outside of college I have my own hobbies, i read books, play board games and sing. I work with programms like adobe after effects, illustrator,photoshop.
         </p> 
         <a 
           href="https:/wa.me/996779008927 
@@ -111,6 +154,7 @@
             alt="" 
         /></a> 
         <p class="whats_par">Contact me via WhatsApp</p> 
+        </div>
       </div> 
     </div> 
     <h1 class="h1_port">Portfolio</h1> 
@@ -127,8 +171,46 @@
       </div> 
       <div class="first_cards"> 
         <h3>banana paradise</h3> 
-        <p>this project was made for ice cream companyi</p> 
+        <p>this project was made for ice cream company</p> 
         <img src="./image/photo_5208622770072699234_y.jpg" alt="" /> 
+      </div> 
+    </div> 
+
+
+
+     <div class="third_main"> 
+      <div class="first_cards"> 
+        <h3>layers</h3> 
+        <p>i made this project for chisrtmas. with deers and chisrtmas tree</p> 
+        <img src="image/Снимок.PNG" alt="" /> 
+      </div> 
+      <div class="first_cards"> 
+        <h3>lotos girl</h3> 
+        <p>we made this project with flat style</p> 
+        <img src="image/Снимок1.PNG" alt="" /> 
+      </div> 
+      <div class="first_cards"> 
+        <h3>harmoni</h3> 
+        <p>it was cover for woman magazine</p> 
+        <img src="image/Снимок2.PNG" alt="" /> 
+      </div> 
+    </div> 
+
+    <div class="third_main"> 
+      <div class="first_cards"> 
+        <h3>business card</h3> 
+        <p>i made this businesscard for myself</p> 
+        <img src="image/Снимок3.PNG" alt="" /> 
+      </div> 
+      <div class="first_cards"> 
+        <h3>dansuse</h3> 
+        <p>designed balerina in motion</p> 
+        <img src="image/Снимок4.PNG" alt="" /> 
+      </div> 
+      <div class="first_cards"> 
+        <h3>cole sprose</h3> 
+        <p>photobooth photos of famous actor</p> 
+        <img src="image/Снимок5.PNG" alt="" /> 
       </div> 
     </div> 
   </body> 
